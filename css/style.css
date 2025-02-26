@@ -4,17 +4,12 @@ body {
   font-size: 30px;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-  font-family: "IBM Plex Mono", monospace;
-}
-
 /* Body Header */
 
 #body-header {
   height: 100vh;
   opacity: 0.9;
-  background-image: url(https://images.pexels.com/photos/13129480/pexels-photo-13129480.jpeg);
+  background-image: url(/Images/Header_BG.png);
   background-size: contain;
   background-size: cover;
   background-position: center;
@@ -132,14 +127,6 @@ section {
   padding-bottom: 20px;
 }
 
-section:nth-child(2n) {
-  background-color: #00000029;
-}
-
-section:nth-child(2n + 1) {
-  background-color: rgb(0, 0, 0);
-}
-
 .section-heading {
   width: auto;
   padding: 20px 10px 10px;
@@ -148,7 +135,7 @@ section:nth-child(2n + 1) {
 
 .section-heading span {
   font-size: 45px;
-  color: #ffffff;
+  color: #bebebe;
   display: inline-block;
   padding-bottom: 1rem;
   margin-right: 0.5rem;
@@ -160,7 +147,7 @@ section:nth-child(2n + 1) {
   height: auto;
   width: 100%;
   position: relative;
-  background-color: #000000;
+  background: #1c1c1c;
 }
 
 #about-para {
@@ -215,30 +202,36 @@ section:nth-child(2n + 1) {
 }
 /* Experience  Section*/
 #experience {
-  background-color: #000000;
+  background: #1c1c1c;
+  line-height: 28px;
+  letter-spacing: 0.1rem;
+  padding: 0 25rem;
 }
 /* Education Section */
 
 .education-card {
-  background-color: #121212;
+  background-color: #1f1f1f;
   display: flex;
   align-items: center;
   width: 80%;
   max-width: 900px;
   margin: 0 auto;
   padding: 30px;
-  border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 20px;
+  letter-spacing: 0.1rem;
 }
 
 /* University Logo */
 .education-logo img {
-  width: 9rem;
+  width: 11rem;
   height: auto;
   margin-right: 25px;
 }
 
 /* Education Section */
+#education {
+  background: #1c1c1c;
+}
 .education-container {
   display: flex;
   justify-content: center;
@@ -292,9 +285,9 @@ section:nth-child(2n + 1) {
 
 /* Portfolio Section */
 #portfolio {
-  background-color: #000000;
+  background: #1c1c1c;
   color: white;
-  padding: 50px 0;
+  padding: 50px 20rem;
   text-align: center;
 }
 
@@ -308,6 +301,7 @@ section:nth-child(2n + 1) {
   max-width: 900px;
   margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1rem;
 }
 
 /* Project Image */
@@ -329,13 +323,15 @@ section:nth-child(2n + 1) {
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
+  letter-spacing: 0.1rem;
 }
 
 /* Project Description */
 .project-info p {
-  font-size: 16px;
+  font-size: 14px;
   color: #ccc;
   text-align: justify;
+  line-height: 25px;
 }
 
 /* Tech Stack Tags */
@@ -399,16 +395,18 @@ section:nth-child(2n + 1) {
   background: #121212;
   color: white;
   padding: 2rem 0;
+  letter-spacing: 0.1rem;
+  line-height: 28px;
 }
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  max-width: 1000px;
+  max-width: 200rem;
   margin: auto;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 0 8rem;
 }
 
 /* Left Side: Contact Info */
@@ -426,7 +424,7 @@ section:nth-child(2n + 1) {
 
 .contact-info p {
   color: #aaa;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 

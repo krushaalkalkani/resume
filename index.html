@@ -11,10 +11,6 @@
       src="https://kit.fontawesome.com/a8580680e1.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
@@ -132,7 +128,7 @@
           </p>
           <!-- Buttons -->
           <div class="button-container">
-            <a href="mailto:krushal.kalkani78@gmail.com" class="btn btn-primary"
+            <a href="mailto:kkalkani2024@fau.edu" class="btn btn-primary"
               >Get in Touch</a
             >
             <a
@@ -148,17 +144,14 @@
       <section id="experience">
         <h1 class="section-heading">
           <span><i class="fas fa-briefcase"></i></span>
-          <span> Work Experience </span>
+          <span> Where I Worked!</span>
         </h1>
 
         <div class="experience-container">
           <div class="project-card">
             <!-- Company Image -->
             <div class="project-image">
-              <img
-                src="https://www.brainvire.com/wp/wp-content/uploads/2024/01/Brainvire-x-Odoo.webp"
-                alt="Company Logo"
-              />
+              <img src="./Images/Brainvire_Logo.png" alt="Company Logo" />
             </div>
 
             <!-- Experience Info -->
@@ -182,6 +175,13 @@
                 <span>OWL JS</span>
                 <span>POS Systems</span>
               </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/krushaalkalkani/odoo-projects"
+                  class="btn btn-primary"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
             </div>
           </div>
         </div>
@@ -197,10 +197,7 @@
           <div class="education-card">
             <!-- Left Side: FAU Logo -->
             <div class="education-logo">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/800px-Florida_Atlantic_Owls_logo.svg.png"
-                alt="FAU Logo"
-              />
+              <img src="./Images/FAU_Logo.png" alt="FAU Logo" />
             </div>
 
             <!-- Right Side: Degree Details -->
@@ -232,24 +229,23 @@
           <div class="project-card">
             <div class="project-image">
               <img
-                src="https://www.brainvire.com/blog/wp-content/uploads/2020/01/Brainvire-Infotech-Inc-Provides-Top-Ranked-Development-Services.jpg"
+                src="./Images/ML.webp"
                 alt="Project 1"
               />
             </div>
             <div class="project-info">
-              <h2>Project Name 1</h2>
-              <p>A short description of the project explaining what it does.</p>
+              <h2>Predictive Analytics for Startups</h2>
+              <p>Built a Multiple Linear Regression model to analyze startup investments and predict company profits based on R&D spend, marketing spend, and administration costs. Applied Feature Scaling and Backward Elimination to optimize model accuracy.</p>
               <div class="tech-stack">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>AI/ML</span>
+                <span>Python</span>
+                <span>ML</span>
+                <span>Tools: Google Colab</span>
               </div>
               <div class="project-links">
-                <a href="#" class="btn btn-primary" target="_blank"
+                <a href="https://github.com/krushaalkalkani/machine-learning" class="btn btn-primary" target="_blank"
                   ><i class="fab fa-github"></i> GitHub</a
                 >
-                <a href="#" class="btn btn-secondary" target="_blank"
+                <a href="https://colab.research.google.com/github/krushal-kalkani/machine-learning/blob/main/03_multiple_linear_regression.ipynb" class="btn btn-secondary" target="_blank"
                   ><i class="fas fa-globe"></i> Live</a
                 >
               </div>
@@ -260,24 +256,23 @@
           <div class="project-card">
             <div class="project-image">
               <img
-                src="https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/6e9d0568-4e6e-40a3-8391-dadd960c4026.jpeg?auto=format&q=50"
+                src="./Images/Google_Keep.png"
                 alt="Project 2"
               />
             </div>
             <div class="project-info">
-              <h2>Project Name 2</h2>
-              <p>A short description of the project explaining what it does.</p>
+              <h2>Google Keep Clone</h2>
+              <p>A Google Keep clone built with React.js for creating, editing, and managing notes. It allows users to add, delete, and organize notes efficiently with a clean and responsive UI, providing a seamless note-taking experience.</p>
               <div class="tech-stack">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>PostgreSQL</span>
-                <span>AI</span>
+                <span>React.js</span>
+                <span>HTML</span>
+                <span>CSS</span>
               </div>
               <div class="project-links">
-                <a href="#" class="btn btn-primary" target="_blank"
+                <a href="https://github.com/krushaalkalkani/google-keep-clone" class="btn btn-primary" target="_blank"
                   ><i class="fab fa-github"></i> GitHub</a
                 >
-                <a href="#" class="btn btn-secondary" target="_blank"
+                <a href="https://github.com/krushaalkalkani/google-keep-clone" class="btn btn-secondary" target="_blank"
                   ><i class="fas fa-globe"></i> Live</a
                 >
               </div>
@@ -287,24 +282,31 @@
           <!-- Project 3 -->
           <div class="project-card">
             <div class="project-image">
-              <img
-                src="https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/6e9d0568-4e6e-40a3-8391-dadd960c4026.jpeg?auto=format&q=50"
-                alt="Project 3"
-              />
+              <img src="Images/Todolist_app.png" alt="Project 3" />
             </div>
             <div class="project-info">
-              <h2>Project Name 3</h2>
-              <p>A short description of the project explaining what it does.</p>
+              <h2>TODO List Manager</h2>
+              <p>
+                A Productive task management app that lets users add, delete,
+                and check tasks. It keeps track of total items and updates
+                dynamically, ensuring an organized to-do list experience.
+              </p>
               <div class="tech-stack">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Firebase</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
               </div>
               <div class="project-links">
-                <a href="#" class="btn btn-primary" target="_blank"
+                <a
+                  href="https://github.com/krushaalkalkani/todolist-app?tab=readme-ov-file"
+                  class="btn btn-primary"
+                  target="_blank"
                   ><i class="fab fa-github"></i> GitHub</a
                 >
-                <a href="#" class="btn btn-secondary" target="_blank"
+                <a
+                  href="https://krushaalkalkani.github.io/todolist-app/"
+                  class="btn btn-secondary"
+                  target="_blank"
                   ><i class="fas fa-globe"></i> Live</a
                 >
               </div>
