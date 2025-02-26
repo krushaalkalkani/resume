@@ -192,8 +192,8 @@ section {
 
 .btn-secondary {
   background-color: transparent;
-  color: black;
-  border: 2px solid rgba(61, 61, 61, 0.6);
+  color: rgb(56, 54, 54);
+  border: 2px solid rgba(109, 107, 107, 0.6);
 }
 
 .btn-secondary:hover {
@@ -378,14 +378,14 @@ section {
 
 /* Live Demo Button */
 .btn-secondary {
-  background-color: #0abcf9;
+  background-color: #7c7c7c;
   color: white;
-  border: 2px solid #0abcf9;
+  /* border: 2px solid #0abcf9; */
 }
 
 .btn-secondary:hover {
   background-color: white;
-  color: #0abcf9;
+  color: #000000;
 }
 
 /* Contact Form */
@@ -442,7 +442,7 @@ section {
 
 .contact-item i {
   font-size: 20px;
-  color: #8b5cf6;
+  color: #9c9696;
   margin-right: 10px;
 }
 
@@ -452,14 +452,14 @@ section {
 }
 
 .contact-icons a {
-  color: #8b5cf6;
+  color: #353436;
   font-size: 24px;
   margin-right: 15px;
   transition: 0.3s;
 }
 
 .contact-icons a:hover {
-  color: #d8b4fe;
+  color: #928989;
 }
 
 /* Right Side: Contact Form */
@@ -499,7 +499,7 @@ section {
   width: 100%;
   padding: 12px;
   border: none;
-  background: #8b5cf6;
+  background: #323232;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -508,7 +508,7 @@ section {
 }
 
 .contact-form button:hover {
-  background: #d8b4fe;
+  background: #636265;
 }
 
 /* Footer */
