@@ -9,7 +9,7 @@ body {
 #body-header {
   height: 100vh;
   opacity: 0.9;
-  background-image: url("/Images/Header_BG.png");
+  background-image: url("https://images.pexels.com/photos/13129480/pexels-photo-13129480.jpeg");
   background-size: contain;
   background-size: cover;
   background-position: center;
