@@ -9,8 +9,8 @@ body {
 #body-header {
   height: 100vh;
   opacity: 0.9;
-  background-image: url("https://img.freepik.com/free-vector/circles-background-dark-tones_60389-166.jpg");
-  background-size: contain;
+  background-image: url("/Images/Header_BG.png");
+  /* background-size: contain; */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
