@@ -1,11 +1,12 @@
 body {
-  margin: 0px;
+  margin: 0;
   font-family: monospace;
   font-size: 30px;
 }
 
 body::-webkit-scrollbar {
   display: none;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 /* Body Header */
@@ -13,7 +14,7 @@ body::-webkit-scrollbar {
 #body-header {
   height: 100vh;
   opacity: 0.9;
-  background-image: url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-image: url(https://images.pexels.com/photos/13129480/pexels-photo-13129480.jpeg);
   background-size: contain;
   background-size: cover;
   background-position: center;
@@ -102,10 +103,11 @@ body::-webkit-scrollbar {
   letter-spacing: 0.1rem;
   color: white;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
+  padding-top: 5rem;
 }
 
-#name-dic {
+#bio {
   font-size: 1rem;
   color: white;
   margin-left: 0.8rem;
@@ -131,11 +133,11 @@ section {
 }
 
 section:nth-child(2n) {
-  background-color: #9e9b9b29;
+  background-color: #00000029;
 }
 
 section:nth-child(2n + 1) {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .section-heading {
@@ -145,10 +147,10 @@ section:nth-child(2n + 1) {
 }
 
 .section-heading span {
-  font-size: 40px;
-  color: #2857a4;
+  font-size: 45px;
+  color: #ffffff;
   display: inline-block;
-  padding-top: 10px;
+  padding-bottom: 1rem;
   margin-right: 0.5rem;
 }
 
@@ -158,23 +160,8 @@ section:nth-child(2n + 1) {
   height: auto;
   width: 100%;
   position: relative;
-  margin-bottom: 30px;
+  background-color: #000000;
 }
-
-/* #my-image {
-  height: 12rem;
-  width: 12rem;
-  margin: auto;
-  margin-top: -17vh;
-}
-
-#my-image img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 1px 1px 10px 2px lightgrey;
-} */
 
 #about-para {
   padding: 10px;
@@ -186,298 +173,353 @@ section:nth-child(2n + 1) {
   margin: auto;
 }
 
-/*Skills Section*/
-
-.skills-display {
-  width: 75%;
-  padding: 10px;
-  margin-bottom: 30px;
+/* Button Container */
+.button-container {
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 20px;
 }
 
-.skill-progress {
-  width: 11rem;
-  height: 2.2rem;
-  background-color: lightgrey;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
-  margin: 25px;
-  overflow: hidden;
+/* Common Button Styles */
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  font-family: "Courier New", monospace;
 }
 
-.skill-progress > div {
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 1px 1px 5px 2px #989882;
-}
-
-.skill-name span {
+.btn-primary {
+  background-color: #2c00b0;
   color: white;
-  font-size: 1rem;
-  margin-left: 10px;
-  vertical-align: middle;
+  border: none;
 }
 
-/* Work Experience */
-
-.timeline-image {
-  border-radius: 25%;
+.btn-primary:hover {
+  background-color: #5f3ace;
+  transform: scale(1.05); /* ✅ Hover Effect */
 }
 
-.timeline {
-  position: relative;
-  width: 75%;
+.btn-secondary {
+  background-color: transparent;
+  color: black;
+  border: 2px solid rgba(61, 61, 61, 0.6);
 }
 
-.timeline-box {
-  padding: 5px;
-  width: 40%;
-  min-height: 150px;
-  position: relative;
-  left: 5%;
-  text-align: right;
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+/* Experience  Section*/
+#experience {
+  background-color: #000000;
+}
+/* Education Section */
+
+.education-card {
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
-.timeline-box::after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: lightgrey;
-  top: 25%;
-  border-radius: 50%;
-  z-index: 1;
+/* University Logo */
+.education-logo img {
+  width: 9rem;
+  height: auto;
+  margin-right: 25px;
 }
 
-.timeline-box:nth-child(2n) {
-  left: 53%;
+/* Education Section */
+.education-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.timeline-box:nth-child(2n + 1)::after {
-  right: -11.8%;
+/* Education Details */
+.education-info {
+  text-align: left;
+  color: #333;
+  flex: 1;
 }
 
-.timeline-box:nth-child(2n)::after {
-  left: -9%;
+.education-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
 }
 
-.timeline-container {
-  padding: 8px;
-}
-
-.timeline-logo {
-  position: absolute;
-  width: 50px;
-  overflow: hidden;
-}
-
-.timeline-logo > img {
-  width: 100%;
-}
-
-#timeline-divider {
-  position: absolute;
-  width: 0;
-  top: 10%;
-  left: 50%;
-  border: 1px dashed #0096fa6b;
-  height: 66%;
-  color: #433e3f;
-}
-
-#timeline-divider .timeline-traveller {
-  position: sticky;
-  top: 135px;
-  z-index: 2;
-}
-
-#timeline-divider i {
-  transform: rotate(90deg);
-  margin-top: -35px;
-  display: block;
-  color: #2857a4;
-}
-
-.experience-designation {
-  font-size: 1.4rem;
-}
-
-.experience-company-name {
-  margin: 5px 0 0;
-  color: #eb822d;
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-.experience-duration {
-  color: #9e9b9b;
-  font-weight: 100;
-  color: grey;
-  font-size: 1rem;
-}
-
-.experience-description {
+.education-info h3 {
   font-size: 14px;
-  padding: 2px;
-  color: grey;
-  line-height: 20px;
+  font-weight: 200;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.education-info p {
+  color: white;
+}
+
+.date {
+  font-size: 16px;
+  color: #fcfcfc;
+  margin-bottom: 10px;
+}
+
+.coursework-title {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+
+.coursework {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Portfolio Section */
-
-#portfolio-container {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 50px;
-  margin-bottom: 20px;
-  justify-content: space-around;
-}
-
-.portfolio-image-container {
-  max-width: 300px;
-  overflow: hidden;
-  margin: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.portfolio-image-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-details {
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  color: transparent;
-  text-align: center;
-  padding: 10px;
-}
-
-.portfolio-image-container:hover {
-  box-shadow: 0 0 20px #74adc8;
-}
-
-.portfolio-image-container:hover .portfolio-details {
-  background-color: #80808078;
+#portfolio {
+  background-color: #000000;
   color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Project Card */
+.project-card {
+  background: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image */
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Project Info */
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Project Title */
+.project-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Project Description */
+.project-info p {
+  font-size: 16px;
+  color: #ccc;
+  text-align: justify;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+  margin: 10px 0;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #444;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* Project Links */
+.project-links {
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+/* GitHub Button */
+.btn-primary {
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Live Demo Button */
+.btn-secondary {
+  background-color: #0abcf9;
+  color: white;
+  border: 2px solid #0abcf9;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #0abcf9;
 }
 
 /* Contact Form */
 
+/* Contact Section */
 #contact {
-  background-color: #0abcf9;
-  background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  background: #121212;
   color: white;
-  padding-bottom: 40px;
+  padding: 2rem 0;
 }
 
-#contact h1,
-#contact h1 span {
-  color: white;
-}
-
-#contact-form {
-  margin-left: 20%;
-}
-
-#contact-container {
+.contact-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-#my-details-container {
-  width: 35%;
-  margin-left: 6%;
+/* Left Side: Contact Info */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  padding: 20px;
 }
 
-#my-details-container h3 {
-  color: white;
-  font-weight: 550;
-  font-size: 1.2rem;
+.contact-info h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
-#contact-form-container {
-  width: 50%;
-}
-
-#my-details-container p {
-  color: #d9dcdd;
-  font-size: 0.9rem;
-}
-
-.my-details-info-container {
+.contact-info p {
+  color: #aaa;
+  font-size: 16px;
   margin-bottom: 20px;
-  color: #d9dcdd;
-  font-size: 1rem;
 }
 
-.my-details-info-container span {
-  margin-left: 0.4rem;
+.contact-details {
+  margin-bottom: 20px;
 }
 
-.my-details-info-container i {
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #8b5cf6;
+  margin-right: 10px;
+}
+
+/* Social Media Icons */
+.contact-icons {
+  margin-top: 15px;
+}
+
+.contact-icons a {
+  color: #8b5cf6;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #d8b4fe;
+}
+
+/* Right Side: Contact Form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #252525;
+  border: none;
   color: white;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-.my-details-icon {
-  width: 1rem;
-  height: 1rem;
-  vertical-align: bottom;
-  margin-right: 0.5rem;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
 }
 
-#contact-form input,
-textarea {
-  max-width: 90%;
-  margin: 15px;
-  padding: 4px 10px;
-  border: 0px solid transparent;
-  border-bottom: 2px solid white;
-  color: #d9dcdd;
-  background: transparent;
-  width: 90%;
-  line-height: 1.6;
-  font-size: 1.05rem;
-}
-
-#contact-form button[type="submit"] {
-  background: transparent;
-  font-size: 0.95rem;
-  border: 2px solid white;
-  margin-top: 5%;
-  margin-left: 35%;
-  border-radius: 2px;
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #8b5cf6;
   color: white;
-  font-family: sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.046875em;
-  line-height: 1;
-  padding: 0.8em 0.8em 0.78em;
-  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-#contact-form button:hover {
-  background: white;
-  color: #13386fe0;
+.contact-form button:hover {
+  background: #d8b4fe;
 }
 
-#contact .social-icons li a i {
-  font-size: 1.2rem;
-  margin: 40px 10px 10px;
-  padding: 10px 14px 20px 10px;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
+/* Footer */
+footer {
+  background: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 14px;
 }
 
 /* Common Text Align Classes */
@@ -600,5 +642,25 @@ button:focus {
   #contact-form-container {
     width: 80%;
     margin: 10%;
+  }
+
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .education-logo img {
+    margin-bottom: 20px;
+    width: 120px; /* Resize logo */
+  }
+
+  .experience-card {
+    padding: 5%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
